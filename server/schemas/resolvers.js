@@ -35,7 +35,7 @@ const resolvers = {
                 throw new AuthenticationError('Incorrect Password')
             }
 
-            const token = sigToken(user);
+            const token = signToken(user);
             return {token, user}
         }
     }
